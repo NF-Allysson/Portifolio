@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+
+/*criando variaveis para facilitar*/
+:root {
+    --fundo-body: #FAFDD6, #E4E9BE;
+    --letras: black;
+    --header: #2f4f4f;
+    --opcional--or: #B4E6EA;
+    --opcional1--or: #7BC7DF;
+
+}
+
+/*zerando para futuramente não dá problema e forçando algumas caracterisiticas serem pegas*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    border: 0;
+    text-decoration: none;
+    color: black;
+    /*contorno*/
+    outline: none;
+    /*formatar o texto*/
+    transition: all .2s linear;
+}
+
+/*seletor do mouse*/
+*::selection {
+    background: darkslategray;
+    color: #fff;
+
+}
+
+/*iniciando o html*/
+
+
+/*finalizando o html*/
+
+/*iniciando o body*/
+
+
+/*finalizando o body*/
+
+/*estilizando o header*/
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: #B4E6EA;
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3);
+    width: 100%;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*estilizando o texto dentro do header*/
+header>.text-logo {
+    font-size: 2rem;
+    color: #666;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+/*criando o span hamburg*/
+header>#menu-icon {
+    width: 20px;
+    /* border-top:1px solid #666; */
+    font-size: 2rem;
+    margin: 1rem;
+    color: #666;
+    display: none;
+}
+
+
+/* header>#menu-icon::after,#menu-icon::before{ 
+    display: block;
+    width: 20px;
+    border-top:inherit;
+    margin-top: 4px;
+}*/
+
+/*terminando o span hamburg*/
+
+/*iniciando nav*/
+header>.nav-barra>ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background: var(--opcional1--or);
+    padding: 1rem;
+}
+
+header>.nav-barra>ul>li {
+    margin: 0 1.5rem;
+}
+
+header>.nav-barra>ul>li>a {
+    font-size: 1.3rem;
+}
+
+header>.nav-barra>ul>li>a:hover {
+    color: #666;
+}
+
+/*termiando nav*/
+
+
+/*Main/Parallax*/
+
+*main {
+    word-wrap: break-word;
+    word-break: break-all;
+    box-sizing: border-box;
+}
+
+/*parallax*/
+
+.module {
+    background: var(--opcional1--or);
+    position: relative;
+
+}
+
+
+.module .image {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text {
+    text-align: center;
+}
+
+.text>a:hover {
+    text-decoration: overline;
+    color: gray;
+}
+
+#btn-inscreva {
+
+    margin: 10px 0px 0px 0px;
+    width: 100px;
+    height: 50px;
+    border-radius: 19px;
+    background: #225585;
+    box-shadow: inset -5px 5px 12px #0e2235,
+        inset 5px -5px 12px #3688d5;
+
+}
+
+.text h1 {
+    font-size: 2rem;
+}
+
+.parallax-1 {
+    background-image: url('/IMG/Animated\ Shape.svg');
+    background-repeat: no-repeat;
+
+}
+
+/*card parallax*/
+/*texto card parallax*/
+.card-text{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    
+}
+
+.card-text>h2:last-child{
+    color: gray;
+    margin: 0px 0px 0px 4px;
+}
+
+.card-text>h2:first-child{
+    margin: 0px 0px 0px 45%;
+}
+/*final texto*/
+
+.parallax{
+    display: flex;
+    height: 100vh;
+    flex-flow: column;
+    flex-direction: center;
+}
+
+.cartao-parallax{
+    display: flex;
+    align-items: center;
+    height: 100%;
+   
+    justify-content: center;
+    position: relative;
+}
+.cartao-parallax::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:50%;
+    margin-top: 20px;
+    height: 70%;
+    width:40%;
+    border-radius: 24px;
+    background: gray;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+    width: 100%;
+    background:var(--opcional--or);
+    /* box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
+    border-radius: 25px;
+
+    position: relative;
+}
+
+.card:hover::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36%;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background: gray;
+}
+
+.card-imagem{
+    position: relative;
+    font-size:3rem ;
+}
+
+.card-texto>p{
+    
+}
+
+/* .card-imagem>img{
+    border-radius: 10px;
+    object-fit: cover;
+    width: 90%;
+    padding: 5px;
+    margin-left: 12px;
+} */
+/*final card parallax*/
+
+
+@media (max-width:500px) {
+
+    /*html*/
+    html {
+        font-size: 50%;
+    }
+
+    /*header*/
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    /*icon span*/
+    header>#menu-icon {
+        display: block;
+    }
+
+    /*navbar*/
+    header>.nav-barra {
+        position: fixed;
+        top: 6.2rem;
+        right: -120%;
+        height: 100%;
+        width: 100%;
+        border-top: .2rem solid rgba(0, 0, 0, .3);
+    }
+
+    /*lista nav*/
+    header>.nav-barra>ul {
+        height: 100%;
+        width: 100%;
+        flex-flow: column;
+        background: #fff;
+        padding-bottom: 15rem;
+    }
+
+    header>.nav-barra>ul>li {
+        text-align: center;
+        width: 100%;
+        margin: 1rem 0;
+
+    }
+
+    header>.nav-barra>ul>li>a {
+        font-size: 4rem;
+        color: #333;
+        display: block;
+    }
+
+    header>.nav-barra>ul>li>a:hover {
+        background: var(--opcional1--or);
+    }
+
+    /*classe de icone criado no js*/
+    .fa-times {
+        transform: rotate(180deg);
+        text-decoration: overline 3px;
+        transition: 1s;
+    }
+
+    /* classe de nav criado no js*/
+
+    header>.nav-toggle {
+        right: 0%;
+    }
+}
+
+
+/* imagem{
+    flex: 1 1 40 rem;
+}
+imagem img{
+    flex: 1 1 40 rem;
+}
+.content{
+    
+} */
