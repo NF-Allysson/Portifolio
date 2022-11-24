@@ -138,12 +138,12 @@ header>.nav-barra>ul>li>a:hover {
 #btn-inscreva {
 
     margin: 10px 0px 0px 0px;
-    width: 100px;
+    width: 300px;
     height: 50px;
     border-radius: 19px;
     background: #225585;
-    box-shadow: inset -5px 5px 12px #0e2235,
-        inset 5px -5px 12px #3688d5;
+   /* box-shadow: /*inset -5px 5px 12px #0e2235,*/
+        /*inset 5px -5px 12px #3688d5;*/
 
 }
 
