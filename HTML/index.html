@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
 
 
         <h1 class="text-logo">Logo</h1>
@@ -50,48 +50,62 @@
             </section>
         </section>
 
-        <section class="module parallax" id="card-parallax">
-           
-                <section class="card-text">
+        
+        <section class="module-2 parallax" id="part2">
+            <section id="navsecun" class="nav-relative">
+
+                <div id="menu-2">
                     <h2>
-                        Leia Mais
+
+                        Logo
+
                     </h2>
-                    <h2>
-                        Sobre nos!
-                    </h2>
-            
-                </section>
-            
-                <section class="cartao-parallax">
-                    <section class="card">
-                        <section class="card-imagem">
-                            <i class="fa-solid fa-comments"></i>
-                        </section>
-                        <section class="card-texto">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, repellat veritatis, sed maxime commodi error culpa rerum laudantium at maiores minima tempora quos pariatur similique, quia voluptates labore! Cupiditate, repellat?</p>
-                           
-                        </section>
-                    </section>
-                </section>
-                <section class="cartao-parallax">
-                    <section class="card">
-                        <section class="card-imagem">
-                            <i class="fa-solid fa-comments"></i>
-                        </section>
-                        <section class="card-texto">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, repellat veritatis, sed maxime commodi error culpa rerum laudantium at maiores minima tempora quos pariatur similique, quia voluptates labore! Cupiditate, repellat?</p>
-                           
-                        </section>
-                    </section>
+
+
+                    <div>
+
+                        <ul>
+                            <li><a href="/HTML/form.html">Pagina Inicial</a></li>
+                            <li><a href="/HTML/login.html">Login</a></li>
+                            <li><a href="/HTML/support.html">Suporte</a></li>
+                            <li><a href="/HTML/chat.html">Conversas</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                
+            </section>
+
+
+            <section class="search-parallax">
+
+                <section class="loupe">
+
+
                 </section>
 
+            </section>
+
         </section>
-        </section>
+
+        <section class="module-2 parallax" style="background-color: white ;"></section>
     </main>
 
 
 
     <!-- jquery cdn link (conteudo estatico)-->
+    <script>
+
+        let men2 = document.getElementById("part2") 
+        let bar = document.getElementById("header")
+
+        men2.addEventListener('wheel', () => {
+            bar.style.display = "flex"
+            bar.style.position = "fixed"
+        })
+
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -137,7 +151,7 @@
                     <i class="fa-solid fa-comments"></i>
                     <span id="textexp">Comentários</span>
                 </a>
-
+'
             </li>
 
             <li onclick="toggleExpan()">

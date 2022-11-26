@@ -158,90 +158,50 @@ header>.nav-barra>ul>li>a:hover {
 }
 
 /*card parallax*/
-/*texto card parallax*/
-.card-text{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    
-}
 
-.card-text>h2:last-child{
-    color: gray;
-    margin: 0px 0px 0px 4px;
-}
+/* Barra de pesquisa (inicio) */
 
-.card-text>h2:first-child{
-    margin: 0px 0px 0px 45%;
-}
-/*final texto*/
-
-.parallax{
-    display: flex;
+.module-2{
+    background: gray;
     height: 100vh;
-    flex-flow: column;
-    flex-direction: center;
 }
 
-.cartao-parallax{
+
+#navsecun{
+    height: 50px;
+    width: 100%;
+    display: none;
+    position: absolute;
+}
+
+#menu-2{
     display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
     align-items: center;
     height: 100%;
-   
-    justify-content: center;
-    position: relative;
 }
-.cartao-parallax::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left:50%;
-    margin-top: 20px;
-    height: 70%;
-    width:40%;
-    border-radius: 24px;
-    background: gray;
-}
-.card{
-    display: flex;
-    flex-direction: column;
+#menu-2>div{
+
+    background: darkslategrey;
+    height:inherit ;
+    width: 50%;
+    text-align: center;
     align-items: center;
-    max-width: 250px;
-    width: 100%;
-    background:var(--opcional--or);
-    /* box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
-    border-radius: 25px;
-
-    position: relative;
 }
 
-.card:hover::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 36%;
-    width: 100%;
-    border-radius: 24px 24px 0 0;
-    background: gray;
+#menu-2>div>ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    height: inherit;
 }
 
-.card-imagem{
-    position: relative;
-    font-size:3rem ;
-}
+/*  barra de pesquisa (fim)*/
 
-.card-texto>p{
-    
-}
-
-/* .card-imagem>img{
-    border-radius: 10px;
-    object-fit: cover;
-    width: 90%;
-    padding: 5px;
-    margin-left: 12px;
-} */
 /*final card parallax*/
 
 
