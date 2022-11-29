@@ -199,7 +199,7 @@ header>.nav-barra>ul>li>a:hover {
 }
 #part2{
     display: flex;
-    justify-content:stretch;
+    justify-content:space-around;
     align-items: center;
     flex-direction: column;
 
@@ -241,9 +241,17 @@ header>.nav-barra>ul>li>a:hover {
  
     width: 90%;
     height: 10px;
-    align-self: flex-start;
-    margin-left: 10px;
+    text-align: justify;
+    transform: translate(0,-250px);
     flex-wrap: wrap;
+    
+}
+.text-search h3{
+    text-align: center;
+}
+.text-search p{
+    padding: 10px;
+    margin-left: 20px;
 }
 
 
@@ -261,7 +269,16 @@ header>.nav-barra>ul>li>a:hover {
     margin-right: 20px;
     border-radius: 10px;
     border: 1px solid;
+    display: flex;
+    align-items: center;
     
+}
+.comando{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
 }
 
 .communitys>.community-card>h3{
@@ -276,11 +293,58 @@ header>.nav-barra>ul>li>a:hover {
 .communitys>.community-card>h3>i{
     margin-right: 10px;
 }
-.communitys>.community-card>.comunnity>ul{
+.communitys>.community-card>.comunnity{
     display: flex;
-    flex-direction: ;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin: 10px;
 }
 
+.comunnity>div{
+margin: 5px;
+
+}
+
+
+.comunnity>div:first-child{
+    height: 100%;
+    border-left:  3px inset rgba(0, 0, 0, .6);
+}
+.comunnity>div:first-child>ul{
+    display: flex;
+    margin-right: 10px;
+    list-style: none;
+    flex-direction: column;
+    margin-left: 2px;
+    padding: 4px;
+}
+
+.comunnity>div:first-child>ul>li {
+    height: 45px;
+    margin: 3px;
+    text-align:center;
+    padding: auto;
+    width: 400px;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+}
+
+.sub{
+    font-size: 13px;
+    list-style: none;
+}
+.icons-chat i{
+    height: 45px;
+    margin: 3px;
+    text-align:center;
+    padding: auto;
+    padding-top: 10px;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+}
+.icons-chat{
+    padding: 5px;
+}
 /* communidades (fim) */
 
 /* buton switch (inicio)*/
