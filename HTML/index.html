@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link Font Awesone -->
-    <link rel="stylesheet" href="/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css">
     <link rel="stylesheet" href="/CSS/Index/style-base.css">
-   
 
 
-    <title>BooksStar</title>
+    <link rel="shortcut icon" href="/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/svgs/regular/bookmark.svg"
+        type="image/x-icon">
+    <title>Stars</title>
 </head>
 
 <body>
@@ -36,76 +37,86 @@
 
     </header>
     <main>
-        <section class="module parallax parallax-1">
+        <section class="module parallax parallax-1" id="part1">
             <section class="image conteudo">
 
                 <section class="text">
-                    
-                    <h1>BooksStar!</h1>
+
+                    <h1>Stars!</h1>
                     <p>Bem vindos!</p>
-                    <p>A BooksStar surge no mercado com objetivo de propor aos leitores uma comunidade onde possam compartilhar seus pensamentos e trocar seus livros em tempo real. <a href="">Saiba mais...</a></p>
+                    <p>A BooksStar surge no mercado com objetivo de propor aos leitores uma comunidade onde possam
+                        compartilhar seus pensamentos e trocar seus livros em tempo real. <a href="">Saiba mais...</a>
+                    </p>
                     <button id="btn-inscreva">Leia Agora!</button>
                 </section>
                 <img src="/IMG/Creative thinking-bro (1).svg" alt="its" width="600px">
             </section>
         </section>
 
-        
+
         <section class="module-2 parallax" id="part2">
-            <section id="navsecun" class="nav-relative">
 
-                <div id="menu-2">
-                    <h2>
-
-                        Logo
-
-                    </h2>
-
-
-                    <div>
-
-                        <ul>
-                            <li><a href="/HTML/form.html">Pagina Inicial</a></li>
-                            <li><a href="/HTML/login.html">Login</a></li>
-                            <li><a href="/HTML/support.html">Suporte</a></li>
-                            <li><a href="/HTML/chat.html">Conversas</a></li>
-                        </ul>
-
-                    </div>
-
-                </div>
-                
-            </section>
 
 
             <section class="search-parallax">
 
                 <section class="loupe">
-
-
+                    <input type="search" placeholder="Search" id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </section>
+
+            </section>
+            <section class="communitys">
+                <section class="community-card">
+                    <h5>Stars Web</h5>
+                    <h3><i class="fa-solid fa-users"></i>Comunidades</h3>
+                    <ul class="comunnity">
+
+                        <li>Remanescentes</li>
+                        <li>Idade das Trevas</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="icons-chat">
+                        <i class="fa-solid fa-users"></i>
+                        <i class="fa-solid fa-users"></i>
+                        <i class="fa-solid fa-users"></i>
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                </section>
+            </section>
+            <section class="text-search">
+
+                <h3>Procure sua comunidade</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus architecto recusandae doloribus
+                    quod et placeat nesciunt sapiente voluptatum, id dolor ea cupiditate reprehenderit laborum beatae,
+                    similique blanditiis magnam iusto sint?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, illo quidem quae consectetur
+                    dolore placeat doloribus ullam, possimus fuga repellendus inventore cum doloremque velit debitis
+                    illum eos optio. Reiciendis, atque.
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa distinctio, maiores enim iusto
+                    tempora tempore? Veniam commodi dignissimos delectus quos. Illo ex eius ut deserunt iste explicabo!
+                    Dolore, obcaecati saepe.</p>
 
             </section>
 
         </section>
 
-        <section class="module-2 parallax" style="background-color: white ;"></section>
+        <section class="module-2 parallax" style="background-color: white ;">
+
+            <section class="btn-switch">
+                <input type="checkbox" id="tema">
+                <label for="tema" id="troca-tema"></label>
+            </section>
+
+        </section>
     </main>
 
 
 
     <!-- jquery cdn link (conteudo estatico)-->
-    <script>
-
-        let men2 = document.getElementById("part2") 
-        let bar = document.getElementById("header")
-
-        men2.addEventListener('wheel', () => {
-            bar.style.display = "flex"
-            bar.style.position = "fixed"
-        })
-
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

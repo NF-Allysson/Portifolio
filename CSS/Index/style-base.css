@@ -3,14 +3,10 @@
 
 
 /*criando variaveis para facilitar*/
-:root {
-    --fundo-body: #FAFDD6, #E4E9BE;
-    --letras: black;
-    --header: #2f4f4f;
-    --opcional--or: #B4E6EA;
-    --opcional1--or: #7BC7DF;
+/* :root { 
+    
 
-}
+}*/
 
 /*zerando para futuramente não dá problema e forçando algumas caracterisiticas serem pegas*/
 * {
@@ -32,6 +28,9 @@
     background: darkslategray;
     color: #fff;
 
+}
+*::placeholder{
+    color: #ffab41;
 }
 
 /*iniciando o html*/
@@ -157,7 +156,6 @@ header>.nav-barra>ul>li>a:hover {
 
 }
 
-/*card parallax*/
 
 /* Barra de pesquisa (inicio) */
 
@@ -199,8 +197,166 @@ header>.nav-barra>ul>li>a:hover {
     align-items: center;
     height: inherit;
 }
+#part2{
+    display: flex;
+    justify-content:stretch;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.search-parallax{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 10%;
+    background: #ff9201;
+    border-radius: 20px;
+    box-shadow: inset 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    align-self: flex-start;
+    
+}
+.loupe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.loupe>i{
+    margin-left: 13px;
+}
+.loupe #search{
+    width: 30vw;
+    height: 30px;
+    border-radius: 10px;
+    caret-color: #ff6d00;
+    padding-left: 10px;
+    color: #ffab41;
+}
+
+.text-search{
+ 
+    width: 90%;
+    height: 10px;
+    align-self: flex-start;
+    margin-left: 10px;
+    flex-wrap: wrap;
+}
+
+
+
 
 /*  barra de pesquisa (fim)*/
+
+/* communidades (inicio) */
+
+.communitys{
+    background: #ff6d00;
+    height: 60vh;
+    width: 40vw;
+    align-self: flex-end;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 1px solid;
+    
+}
+
+.communitys>.community-card>h3{
+    text-align: center;
+    border-bottom: 1px solid;
+ 
+}
+.communitys>.community-card>h5{
+    margin:5px;
+}
+
+.communitys>.community-card>h3>i{
+    margin-right: 10px;
+}
+.communitys>.community-card>.comunnity>ul{
+    display: flex;
+    flex-direction: ;
+}
+
+/* communidades (fim) */
+
+/* buton switch (inicio)*/
+
+.btn-switch{
+    height: 25em;
+    width: 25em;
+    position: relative;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+#tema[type="checkbox"]{
+    appearance: none;
+    height: 9.37em;
+    width: 18.75em;
+    background: #ff9201;
+    position: relative;
+    transform: translate(-50%);
+    left: 50%;
+    top:6.25em;
+    border-radius: 4.68em;
+}
+
+#tema[type="checkbox"]::before{
+    position: absolute;
+    content: "";
+    height: 8.12em;
+    width: 8.12em;
+    background-color: #ff6d00;
+    border-radius: 50%;
+    top: 0.62em;
+    left: 0.62em;
+    transition: 0.3s;
+}
+
+#troca-tema[for="tema"]{
+    height: 6.25em;
+    width: 0.62em;
+    background-color: #ff9201;
+    position: relative;
+    top: 11em;
+    left: 8em;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+#troca-tema[for="tema"]::after{
+    position: relative;
+    content: "";
+    height: 0;
+    width: 0.75em;
+    border-bottom: 1.56em solid #ff6d00;
+    border-left: 0.56em solid transparent;
+    border-right: 0.56em solid transparent;
+    top: 5.93em;
+    left: -0.68em;
+
+}
+
+#tema[type="checkbox"],#troca-tema[for="tema"]{
+    cursor: pointer;
+}
+
+#tema[type="checkbox"]:checked::before{
+    background: #ff9201;
+    left: 10em;
+    box-shadow: 0 0 8.75em 1.87em rgba(0,0,0 0.6);
+}
+
+#tema[type="checkbox"]:checked + #troca-tema{
+    top:12em;
+}
+/* buton switch(fim) */
+
 
 /*final card parallax*/
 
