@@ -8,6 +8,12 @@
 
 }*/
 
+:root{
+    paleta--1: #3F7396;
+    paleta--2:#4f8eb5;
+    paleta--3:#77BDDF;
+    paleta--4:#A4E2F9;
+}
 /*zerando para futuramente não dá problema e forçando algumas caracterisiticas serem pegas*/
 * {
     padding: 0;
@@ -347,7 +353,7 @@ margin: 5px;
 }
 /* communidades (fim) */
 
-/* buton switch (inicio)*/
+/* buton switch (inicio) 1
 
 .btn-switch{
     height: 25em;
@@ -393,23 +399,7 @@ margin: 5px;
     transition: 0.3s;
 }
 
-#troca-tema[for="tema"]::after{
-    position: relative;
-    content: "";
-    height: 0;
-    width: 0.75em;
-    border-bottom: 1.56em solid #ff6d00;
-    border-left: 0.56em solid transparent;
-    border-right: 0.56em solid transparent;
-    top: 5.93em;
-    left: -0.68em;
-
-}
-
-#tema[type="checkbox"],#troca-tema[for="tema"]{
-    cursor: pointer;
-}
-
+ 
 #tema[type="checkbox"]:checked::before{
     background: #ff9201;
     left: 10em;
@@ -419,13 +409,64 @@ margin: 5px;
 #tema[type="checkbox"]:checked + #troca-tema{
     top:12em;
 }
-/* buton switch(fim) */
+ buton switch(fim) */
+
+/* button switch 2 */
+
+#togllebut{
+ background: #225585;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 0;
+
+}
+/* input[ colocar um atributo aqui dentro permite selecionar apenas os checkbox] */
+input[type="checkbox"]{
+    width: 90px;
+    height: 40px;
+    appearance:none;/*retira a imagem padrao*/
+    background-color: wheat;
+    border-radius: 50px;
+    box-shadow: inset 0px 0px 16px 1px, rgba(0, 0, 0, .24);
+    cursor: pointer; ;
+    position: relative;
+    
+}
+
+.tema>i{
+    font-size: 40px;
+    margin-left: 5px;
+    align-self: center;
+    box-sizing: border-box;
+}
+input:checked[type="checkbox"]{
+    background-color:#ffab41;
+    transition: 0.6s;
+    /* transform-origin: left; */
+}
+
+input:checked[type="checkbox"]:before{
+    left: 50px;
+}
+
+input[type="checkbox"]:before{
+    content: '';
+    width: 40px;
+    top: 0;
+    transition: .8s;
+    left: 0;
+    height: 40px;
+    background-color: aliceblue;
+    position: absolute;
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px 1px, rgba(0, 0, 0, .25);
+    transform: scale(1.1);
+}
+    /*final card parallax*/
 
 
-/*final card parallax*/
-
-
-@media (max-width:500px) {
+@media (max-width:799px) {
 
     /*html*/
     html {
