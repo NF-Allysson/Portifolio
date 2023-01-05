@@ -1,32 +1,29 @@
-// $(document).ready(function(){
-//     $('#menu-icon').click(function(){
-//         $(this).toggleClass('fa-times')
-//         $('.nav-barra').toggleClass('nav-toggle')
-//     })
-// })
+ $(document).ready(function(){
+     $('#menu-icon').click(function(){
+         $(this).toggleClass('fa-times')
+         $('.nav-barra').toggleClass('nav-toggle')
+     })
+ })
+ 
+//  let men2 = document.getElementById("part2")
+ let parallax1 = document.getElementById("part1")
+ let cabecalho = document.getElementById("header")
+//  men2.addEventListener('wheel', () => {
+//      bar.style.display = "flex"
+//      bar.style.position = "fixed"
+//  })
+ parallax1.addEventListener('wheel', () => {
+     cabecalho.style.display = "flex"
+     cabecalho.style.position = "relative"
+ })
 
+let theme = document.getElementById("btn-switch")
+let icon_theme = document.getElementById("theme")
+let corpo = document.querySelector("header")
 
-// let men2 = document.getElementById("part2")
-// let men = document.getElementById("part1") 
-// let bar = document.getElementById("header")
-
-// men2.addEventListener('wheel', () => {
-//     bar.style.display = "flex"
-//     bar.style.position = "fixed"
-// })
-// men.addEventListener('wheel', () => {
-//     bar.style.display = "flex"
-//     bar.style.position = "relative"
-// })
-
-// var campoteste = document.getElementById("togllebut")
-// var tema = document.getElementById("turma")
-// tema.addEventListener('click', Tematela)
-
-// function Tematela(){
-//     campoteste.style.background = "black"
-//     var claro = document.getElementById("turn")
-//     claro.classList.toggle("fa-moon")
-//     claro.classList.add("fa-sun")
-// }
-
+theme.addEventListener('click', TemaEscuro)
+function TemaEscuro(){
+    icon_theme.classList.toggle('fa-sun')
+    icon_theme.classList.toggle('fa-moon')
+    corpo.classList.toggle('active')
+}

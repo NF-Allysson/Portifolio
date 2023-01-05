@@ -1,0 +1,293 @@
+/* Paleta opicional azul - tom1
+:root {
+    paleta--1: #3F7396;
+    paleta--2: #4f8eb5;
+    paleta--3: #77BDDF;
+    paleta--4: #A4E2F9;
+} */ 
+
+/* Paleta de or laranja:
+:root{
+    paleta--1: #ffab41
+    paleta--2:#ff6d00
+    paleta--3::#ff9201
+    paleta--4:
+
+}
+*/
+/*
+/* Barra de pesquisa (inicio) 
+
+.module-2 {
+    background: gray;
+    height: 100vh;
+}
+
+
+#navsecun {
+    height: 50px;
+    width: 100%;
+    display: none;
+    position: absolute;
+}
+
+#menu-2 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+#menu-2>div {
+
+    background: darkslategrey;
+    height: inherit;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+}
+
+#menu-2>div>ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    height: inherit;
+}
+
+#part2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.search-parallax {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 10%;
+    background: #ff9201;
+    border-radius: 20px;
+    box-shadow: inset 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    align-self: flex-start;
+
+}
+
+.loupe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.loupe>i {
+    margin-left: 13px;
+}
+
+.loupe #search {
+    width: 30vw;
+    height: 30px;
+    border-radius: 10px;
+    caret-color: #ff6d00;
+    padding-left: 10px;
+    color: #ffab41;
+}
+
+.text-search {
+
+    width: 90%;
+    height: 10px;
+    text-align: justify;
+    transform: translate(0, -250px);
+    flex-wrap: wrap;
+
+}
+
+.text-search h3 {
+    text-align: center;
+}
+
+.text-search p {
+    padding: 10px;
+    margin-left: 20px;
+}
+
+
+
+
+/*  barra de pesquisa (fim)
+
+/* communidades (inicio) 
+
+.communitys {
+    background: #ff6d00;
+    height: 60vh;
+    width: 40vw;
+    align-self: flex-end;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+
+}
+
+.comando {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+}
+
+.communitys>.community-card>h3 {
+    text-align: center;
+    border-bottom: 1px solid;
+
+}
+
+.communitys>.community-card>h5 {
+    margin: 5px;
+}
+
+.communitys>.community-card>h3>i {
+    margin-right: 10px;
+}
+
+.communitys>.community-card>.comunnity {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.comunnity>div {
+    margin: 5px;
+
+}
+
+
+.comunnity>div:first-child {
+    height: 100%;
+    border-left: 3px inset rgba(0, 0, 0, .6);
+}
+
+.comunnity>div:first-child>ul {
+    display: flex;
+    margin-right: 10px;
+    list-style: none;
+    flex-direction: column;
+    margin-left: 2px;
+    padding: 4px;
+}
+
+.comunnity>div:first-child>ul>li {
+    height: 45px;
+    margin: 3px;
+    text-align: center;
+    padding: auto;
+    width: 400px;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+}
+
+.sub {
+    font-size: 13px;
+    list-style: none;
+}
+
+.icons-chat i {
+    height: 45px;
+    margin: 3px;
+    text-align: center;
+    padding: auto;
+    padding-top: 10px;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+}
+
+.icons-chat {
+    padding: 5px;
+}
+
+/*communidades (fim) */
+
+
+/* botão switch opcional 2
+/* buton switch (inicio) 1
+
+.btn-switch{
+    height: 25em;
+    width: 25em;
+    position: relative;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+#tema[type="checkbox"]{
+    appearance: none;
+    height: 9.37em;
+    width: 18.75em;
+    background: #ff9201;
+    position: relative;
+    transform: translate(-50%);
+    left: 50%;
+    top:6.25em;
+    border-radius: 4.68em;
+}
+
+#tema[type="checkbox"]::before{
+    position: absolute;
+    content: "";
+    height: 8.12em;
+    width: 8.12em;
+    background-color: #ff6d00;
+    border-radius: 50%;
+    top: 0.62em;
+    left: 0.62em;
+    transition: 0.3s;
+}
+
+#troca-tema[for="tema"]{
+    height: 6.25em;
+    width: 0.62em;
+    background-color: #ff9201;
+    position: relative;
+    top: 11em;
+    left: 8em;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+ 
+#tema[type="checkbox"]:checked::before{
+    background: #ff9201;
+    left: 10em;
+    box-shadow: 0 0 8.75em 1.87em rgba(0,0,0 0.6);
+}
+
+#tema[type="checkbox"]:checked + #troca-tema{
+    top:12em;
+}
+
+ buton switch(fim) */
+
+/* flex 
+/* imagem{
+    flex: 1 1 40 rem;
+}
+imagem img{
+    flex: 1 1 40 rem;
+}
+.content{
+    
+} */*/

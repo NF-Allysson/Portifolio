@@ -1,40 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <!-- Link Font Awesone -->
-    <link rel="stylesheet" href="/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.css">
-    <link rel="shortcut icon" href="/IMG/livro.ico.png" type="image/x-icon" />
-    <title>Portifolio
-    </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Link Font Awesone -->
+  <link rel="stylesheet" href="/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.css">
+  <link rel="shortcut icon" href="/IMG/livro.ico.png" type="image/x-icon" />
+  <link rel="stylesheet" href="/CSS/Index/slide.css">
+  <title>Portifolio
+  </title>
 </head>
+
 <body>
-    <header>
-        
-        <button id="btn-menu" type="button" onclick="toggleSlidebar()" aria-label="Abrir Menu"><span class="hamburg"></span></button>
-        <h1>Login</h1>
-      <nav>
+  <!-- <header>
 
-        <ul>
-            <li><a href="/HTML/form.html">Pagina Inicial</a></li>
-            <li><a href="/HTML/login.html">Login</a></li>
-            <li><a href="/HTML/support.html">Suporte</a></li>
-            <li><a href="/HTML/chat.html">Conversas</a></li>
-        </ul>
-        
-      </nav>
-    
-    </header>
+    <button id="btn-menu" type="button" onclick="toggleSlidebar()" aria-label="Abrir Menu"><span
+        class="hamburg"></span></button>
+    <h1>Login</h1>
+    <nav>
+
+      <ul>
+        <li><a href="/HTML/form.html">Pagina Inicial</a></li>
+        <li><a href="/HTML/login.html">Login</a></li>
+        <li><a href="/HTML/support.html">Suporte</a></li>
+        <li><a href="/HTML/chat.html">Conversas</a></li>
+      </ul>
+
+    </nav>
+
+  </header> -->
+
+  <main>
+    <section class="containerproje">
+      <!-- slide1 -->
+      <section class="slide-container active">
+
+        <section class="slide">
+
+          <section class="contentproje">
+
+            <h3>Metaverso</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero placeat incidunt similique repellendus id
+              soluta inventore, minima ducimus eos sapiente laborum labore magnam modi reiciendis odio! Ad est
+              distinctio consequatur.</p>
+            <a href="" class="btnproj">Saiba Mais</a>
+
+          </section>
+
+        </section>
+
+      </section>
+      <!-- slide2 -->
+      <section class="slide-container">
+
+        <section class="slide">
+
+          <section class="contentproje">
+
+            <h3>Metaverso</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero placeat incidunt similique repellendus id
+              soluta inventore, minima ducimus eos sapiente laborum labore magnam modi reiciendis odio! Ad est
+              distinctio consequatur.</p>
+            <a href="" class="btnproj">Saiba Mais</a>
+
+          </section>
+
+        </section>
+
+      </section>
+      <!-- slide3 -->
+      <section class="slide-container">
+
+        <section class="slide">
+
+          <section class="contentproje">
+
+            <h3>Metaverso</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero placeat incidunt similique repellendus id
+              soluta inventore, minima ducimus eos sapiente laborum labore magnam modi reiciendis odio! Ad est
+              distinctio consequatur.</p>
+            <a href="" class="btnproj">Saiba Mais</a>
+
+          </section>
+
+        </section>
+
+      </section>
+
+      <div id="prev">
+        < </div>
+          <div id="next"> > </div>
+
+    </section>
+  </main>
 
 
 
+  <script>
+    let slides = document.querySelectorAll('.slide-container')
+    let index = 0;
+    function next() {
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.remove('active');
+    }
+    function prev() {
+      slides[index].classList.remove('active');
+      index = (index - 1 + slides.length) % slides.length;
+      slides[index].classList.remove('active');
+    }
+    setInterval(next, 7000);
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   
 </body>
+
 </html>

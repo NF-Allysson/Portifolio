@@ -1,19 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-
-
-/*criando variaveis para facilitar*/
-/* :root { 
-    
-
-}*/
-
-:root{
-    paleta--1: #3F7396;
-    paleta--2:#4f8eb5;
-    paleta--3:#77BDDF;
-    paleta--4:#A4E2F9;
-}
 /*zerando para futuramente não dá problema e forçando algumas caracterisiticas serem pegas*/
 * {
     padding: 0;
@@ -35,7 +21,8 @@
     color: #fff;
 
 }
-*::placeholder{
+
+*::placeholder {
     color: #ffab41;
 }
 
@@ -51,11 +38,11 @@
 
 /*estilizando o header*/
 header {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 1000;
-    background: #B4E6EA;
+    background: rgba(0, 0, 0, .65);
     box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3);
     width: 100%;
     text-transform: capitalize;
@@ -89,16 +76,19 @@ header>.nav-barra>ul {
     align-items: center;
     justify-content: center;
     list-style: none;
-    background: var(--opcional1--or);
+    background: rgba(0, 0, 0, .25);
     padding: 1rem;
+    
 }
 
 header>.nav-barra>ul>li {
     margin: 0 1.5rem;
+    
 }
 
 header>.nav-barra>ul>li>a {
     font-size: 1.3rem;
+    color: gray;
 }
 
 header>.nav-barra>ul>li>a:hover {
@@ -121,6 +111,7 @@ header>.nav-barra>ul>li>a:hover {
 .module {
     background: var(--opcional1--or);
     position: relative;
+   
 
 }
 
@@ -147,8 +138,8 @@ header>.nav-barra>ul>li>a:hover {
     height: 50px;
     border-radius: 19px;
     background: #225585;
-   /* box-shadow: /*inset -5px 5px 12px #0e2235,*/
-        /*inset 5px -5px 12px #3688d5;*/
+    /* box-shadow: /*inset -5px 5px 12px #0e2235,*/
+    /*inset 5px -5px 12px #3688d5;*/
 
 }
 
@@ -159,312 +150,208 @@ header>.nav-barra>ul>li>a:hover {
 .parallax-1 {
     background-image: url('/IMG/Animated\ Shape.svg');
     background-repeat: no-repeat;
-
-}
-
-
-/* Barra de pesquisa (inicio) */
-
-.module-2{
-    background: gray;
     height: 100vh;
-}
-
-
-#navsecun{
-    height: 50px;
-    width: 100%;
-    display: none;
-    position: absolute;
-}
-
-#menu-2{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    height: 100%;
-}
-#menu-2>div{
-
-    background: darkslategrey;
-    height:inherit ;
-    width: 50%;
-    text-align: center;
-    align-items: center;
-}
-
-#menu-2>div>ul{
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;
-    height: inherit;
-}
-#part2{
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    flex-direction: column;
 
 }
-
-
-.search-parallax{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    height: 10%;
-    background: #ff9201;
-    border-radius: 20px;
-    box-shadow: inset 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
-    margin: 10px;
-    align-self: flex-start;
-    
-}
-.loupe{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-}
-.loupe>i{
-    margin-left: 13px;
-}
-.loupe #search{
-    width: 30vw;
-    height: 30px;
-    border-radius: 10px;
-    caret-color: #ff6d00;
-    padding-left: 10px;
-    color: #ffab41;
-}
-
-.text-search{
- 
-    width: 90%;
-    height: 10px;
-    text-align: justify;
-    transform: translate(0,-250px);
-    flex-wrap: wrap;
-    
-}
-.text-search h3{
-    text-align: center;
-}
-.text-search p{
-    padding: 10px;
-    margin-left: 20px;
-}
-
-
-
-
-/*  barra de pesquisa (fim)*/
-
-/* communidades (inicio) */
-
-.communitys{
-    background: #ff6d00;
-    height: 60vh;
-    width: 40vw;
-    align-self: flex-end;
-    margin-right: 20px;
-    border-radius: 10px;
-    border: 1px solid;
-    display: flex;
-    align-items: center;
-    
-}
-.comando{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px;
-    margin: 10px;
-}
-
-.communitys>.community-card>h3{
-    text-align: center;
-    border-bottom: 1px solid;
- 
-}
-.communitys>.community-card>h5{
-    margin:5px;
-}
-
-.communitys>.community-card>h3>i{
-    margin-right: 10px;
-}
-.communitys>.community-card>.comunnity{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    margin: 10px;
-}
-
-.comunnity>div{
-margin: 5px;
-
-}
-
-
-.comunnity>div:first-child{
-    height: 100%;
-    border-left:  3px inset rgba(0, 0, 0, .6);
-}
-.comunnity>div:first-child>ul{
-    display: flex;
-    margin-right: 10px;
-    list-style: none;
-    flex-direction: column;
-    margin-left: 2px;
-    padding: 4px;
-}
-
-.comunnity>div:first-child>ul>li {
-    height: 45px;
-    margin: 3px;
-    text-align:center;
-    padding: auto;
-    width: 400px;
-    border-bottom: 2px solid;
-    border-top: 2px solid;
-}
-
-.sub{
-    font-size: 13px;
-    list-style: none;
-}
-.icons-chat i{
-    height: 45px;
-    margin: 3px;
-    text-align:center;
-    padding: auto;
-    padding-top: 10px;
-    border-bottom: 2px solid;
-    border-top: 2px solid;
-}
-.icons-chat{
-    padding: 5px;
-}
-/* communidades (fim) */
-
-/* buton switch (inicio) 1
-
-.btn-switch{
-    height: 25em;
-    width: 25em;
-    position: relative;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 50%;
-}
-
-#tema[type="checkbox"]{
-    appearance: none;
-    height: 9.37em;
-    width: 18.75em;
-    background: #ff9201;
-    position: relative;
-    transform: translate(-50%);
-    left: 50%;
-    top:6.25em;
-    border-radius: 4.68em;
-}
-
-#tema[type="checkbox"]::before{
-    position: absolute;
-    content: "";
-    height: 8.12em;
-    width: 8.12em;
-    background-color: #ff6d00;
-    border-radius: 50%;
-    top: 0.62em;
-    left: 0.62em;
-    transition: 0.3s;
-}
-
-#troca-tema[for="tema"]{
-    height: 6.25em;
-    width: 0.62em;
-    background-color: #ff9201;
-    position: relative;
-    top: 11em;
-    left: 8em;
-    z-index: -1;
-    transition: 0.3s;
-}
-
- 
-#tema[type="checkbox"]:checked::before{
-    background: #ff9201;
-    left: 10em;
-    box-shadow: 0 0 8.75em 1.87em rgba(0,0,0 0.6);
-}
-
-#tema[type="checkbox"]:checked + #troca-tema{
-    top:12em;
-}
- buton switch(fim) */
 
 /* button switch 2 */
 
-#togllebut{
- background: #225585;
- display: flex;
- align-items: center;
- justify-content: center;
- margin: 0;
 
-}
+
 /* input[ colocar um atributo aqui dentro permite selecionar apenas os checkbox] */
-input[type="checkbox"]{
-    width: 90px;
-    height: 40px;
-    appearance:none;/*retira a imagem padrao*/
+input[type="checkbox"] {
+    width: 60px;
+    height: 25px;
+    appearance: none;
+    /*retira a imagem padrao*/
     background-color: wheat;
     border-radius: 50px;
     box-shadow: inset 0px 0px 16px 1px, rgba(0, 0, 0, .24);
-    cursor: pointer; ;
+    cursor: pointer;
+    ;
     position: relative;
-    
+
 }
 
-.tema>i{
-    font-size: 40px;
+.li-tema>i {
+    font-size: 25px;
     margin-left: 5px;
     align-self: center;
     box-sizing: border-box;
+    position: absolute;
+    color: gray;
 }
-input:checked[type="checkbox"]{
-    background-color:#ffab41;
+
+input:checked[type="checkbox"] {
+    background-color: #ffab41;
     transition: 0.6s;
     /* transform-origin: left; */
 }
 
-input:checked[type="checkbox"]:before{
-    left: 50px;
+input:checked[type="checkbox"]:before {
+    left: 35px;
 }
 
-input[type="checkbox"]:before{
+input[type="checkbox"]:before {
     content: '';
-    width: 40px;
+    width: 25px;
     top: 0;
     transition: .8s;
     left: 0;
-    height: 40px;
+    height: 25px;
     background-color: aliceblue;
     position: absolute;
     border-radius: 25px;
     box-shadow: 0px 4px 8px 1px, rgba(0, 0, 0, .25);
     transform: scale(1.1);
 }
-    /*final card parallax*/
 
+/* final button swicth - final parallax1(part1) - finaldefined */
+
+
+/* chamar no css apos adicionar no
+.active{
+    background: black;
+} */
+
+
+/* parallax slide */
+
+
+.carousel-content {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    /* border-radius: 20px; */
+    overflow: hidden;
+    position: ab;
+    /* top: 50%;
+    left: 50%; */
+    /* box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
+    /* transform: translate(-50%, -50%); */
+}
+
+#nav-navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar {
+    width: 40px;
+    height: 17px;
+    margin: 3px;
+    border: 2px solid black;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: .6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar:hover {
+    background: black;
+
+}
+
+.carousel-content .carousel-slides input {
+    display: none;
+}
+
+.carousel-slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slider {
+    width: 20%;
+    transition: 2s;
+    display: flex;
+    align-items: center;
+
+}
+
+.slider_text:nth-child(1) {
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 30%;
+    text-align: justify;
+}
+
+.slider_text>p,
+.slider_text>h3,
+.slider_text>a {
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#slide1:checked~.s1 {
+    margin-right: -100%;
+}
+
+#slide2:checked~.s1 {
+    margin-left: -20%;
+}
+
+#slide3:checked~.s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked~.s1 {
+    margin-left: -60%;
+
+}
+
+#slide5:checked~.s1 {
+    margin-left: -80%;
+}
+
+.carousel-content .carousel-slides .slider_1 {
+    background: url('https://img.elo7.com.br/product/original/3B6A5D4/edicao-de-fotos-reais-animes-ou-desenhos-edicao-de-desenho.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carousel-content .carousel-slides .slider_2 {
+    background: url('https://cdn.pixabay.com/photo/2018/07/22/09/24/pages-3554116_960_720.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carousel-content .carousel-slides .slider_3 {
+    background: url('https://jornalismorio.espm.br/wp-content/uploads/2021/12/confira-agora-os-25-melhores-animes-que-ja-foram-criados-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carousel-content .carousel-slides .slider_4 {
+    background: url('https://uploads.spiritfanfiction.com/historias/capas/201904/paginas-de-livros-16170039-010420191341.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carousel-content .carousel-slides .slider_5 {
+    background: url('https://miro.medium.com/max/1400/1*cYsMONiUZ60XrpaPRgUZ8w.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#slides-slide {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(darkslategray, darkgray, gray);
+    position: relative;
+}
 
 @media (max-width:799px) {
 
@@ -535,14 +422,3 @@ input[type="checkbox"]:before{
         right: 0%;
     }
 }
-
-
-/* imagem{
-    flex: 1 1 40 rem;
-}
-imagem img{
-    flex: 1 1 40 rem;
-}
-.content{
-    
-} */
