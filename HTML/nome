@@ -1,4 +1,3 @@
-
 <!-- 
         <section class="module-2 parallax" id="part2">
 
@@ -67,7 +66,7 @@
 
 
 
-        <!-- <nav id="princi">
+<!-- <nav id="princi">
         <ul class="list-menu" id="listit">
             <li onclick="toggleExpan()">
 
@@ -120,3 +119,112 @@
 
         </ul>
     </nav> -->
+
+
+
+
+<!-- inicio corpo pagina parallax 1 -->
+<section class="module parallax parallax-1" id="part1">
+    <section class="image conteudo">
+
+        <section class="text">
+
+            <h1>Stars!</h1>
+            <p>Bem vindos!</p>
+            <p>A BooksStar surge no mercado com objetivo de propor aos leitores uma comunidade onde possam
+                compartilhar seus pensamentos e trocar seus livros em tempo real. <a href="">Saiba mais...</a>
+            </p>
+            <button id="btn-inscreva">Leia Agora!</button>
+        </section>
+        <img src="/IMG/Creative thinking-bro (1).svg" alt="its" width="600px">
+    </section>
+</section>
+
+
+<!-- parralax 1 fim-->
+
+
+<main>
+    <section class="containerproje">
+        <!-- slide1 -->
+        <section class="slide-container active">
+
+            <section class="slide">
+
+                <section class="contentproje">
+
+                    <h3>Metaverso</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero placeat incidunt similique
+                        repellendus id
+                        soluta inventore, minima ducimus eos sapiente laborum labore magnam modi reiciendis odio! Ad est
+                        distinctio consequatur.</p>
+                    <a href="" class="btnproj">Saiba Mais</a>
+
+                </section>
+
+            </section>
+
+        </section>
+        <!-- slide2 -->
+        <section class="slide-container">
+
+            <section class="slide">
+
+                <section class="contentproje">
+
+                    <h3>Metaverso</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero placeat incidunt similique
+                        repellendus id
+                        soluta inventore, minima ducimus eos sapiente laborum labore magnam modi reiciendis odio! Ad est
+                        distinctio consequatur.</p>
+                    <a href="" class="btnproj">Saiba Mais</a>
+
+                </section>
+
+            </section>
+
+        </section>
+        <!-- slide3 -->
+        <section class="slide-container">
+
+            <section class="slide">
+
+                <section class="contentproje">
+
+                    <h3>Metaverso</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero placeat incidunt similique
+                        repellendus id
+                        soluta inventore, minima ducimus eos sapiente laborum labore magnam modi reiciendis odio! Ad est
+                        distinctio consequatur.</p>
+                    <a href="" class="btnproj">Saiba Mais</a>
+
+                </section>
+
+            </section>
+
+        </section>
+
+        <div id="prev">
+            < </div>
+                <div id="next"> > </div>
+
+    </section>
+</main>
+
+
+
+<script>
+    let slides = document.querySelectorAll('.slide-container')
+    let index = 0;
+    function next() {
+        slides[index].classList.remove('active');
+        index = (index + 1) % slides.length;
+        slides[index].classList.remove('active');
+    }
+    function prev() {
+        slides[index].classList.remove('active');
+        index = (index - 1 + slides.length) % slides.length;
+        slides[index].classList.remove('active');
+    }
+    setInterval(next, 7000);
+</script>

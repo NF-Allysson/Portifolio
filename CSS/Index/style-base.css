@@ -78,12 +78,12 @@ header>.nav-barra>ul {
     list-style: none;
     background: rgba(0, 0, 0, .25);
     padding: 1rem;
-    
+
 }
 
 header>.nav-barra>ul>li {
     margin: 0 1.5rem;
-    
+
 }
 
 header>.nav-barra>ul>li>a {
@@ -108,51 +108,6 @@ header>.nav-barra>ul>li>a:hover {
 
 /*parallax*/
 
-.module {
-    background: var(--opcional1--or);
-    position: relative;
-   
-
-}
-
-
-.module .image {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.text {
-    text-align: center;
-}
-
-.text>a:hover {
-    text-decoration: overline;
-    color: gray;
-}
-
-#btn-inscreva {
-
-    margin: 10px 0px 0px 0px;
-    width: 300px;
-    height: 50px;
-    border-radius: 19px;
-    background: #225585;
-    /* box-shadow: /*inset -5px 5px 12px #0e2235,*/
-    /*inset 5px -5px 12px #3688d5;*/
-
-}
-
-.text h1 {
-    font-size: 2rem;
-}
-
-.parallax-1 {
-    background-image: url('/IMG/Animated\ Shape.svg');
-    background-repeat: no-repeat;
-    height: 100vh;
-
-}
 
 /* button switch 2 */
 
@@ -206,7 +161,6 @@ input[type="checkbox"]:before {
     transform: scale(1.1);
 }
 
-/* final button swicth - final parallax1(part1) - finaldefined */
 
 
 /* chamar no css apos adicionar no
@@ -351,6 +305,43 @@ input[type="checkbox"]:before {
     width: 100%;
     background: linear-gradient(darkslategray, darkgray, gray);
     position: relative;
+}
+
+/* texto e conteudoo slides da landing page */
+
+#parallax-sobre{
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    background: url(/IMG/Animated\ Shape.svg) no-repeat;
+    background-size: cover;
+}
+
+.sobre section:nth-child(2) {
+   
+    display: flex;
+    grid-column: 4/4;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+
+}
+
+#parallax-sobretxt{
+    text-align: justify;
+   grid-column: 1/3;
 }
 
 @media (max-width:799px) {
