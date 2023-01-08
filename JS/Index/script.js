@@ -1,4 +1,62 @@
-//barra de navegar responsiva
+
+// variaveis
+let button_theme = document.getElementById('btn-switch')
+let troca_icon = document.getElementById('theme')
+let parte1 = document.getElementById('slides_slide')
+let cabeca = document.getElementById('header')
+let sobre = document.getElementById('parallax-sobre')
+let button_radio = document.getElementById('wrapper')
+let count = 1;
+let inscreva = document.getElementById('btn-inscreva')
+let redirec = document.querySelector('.btn-redirec')
+
+
+
+// let proximo = document.getElementById('next')
+// let anterior = document.getElementById('prev')
+// let slide_atual = 0;
+// let navegador_slide = document.querySelectorAll('#nav-navigation label')
+
+// style - mudanças no css
+
+
+
+// adicionar lista
+
+button_theme.addEventListener('click',trocarTema )
+parte1.addEventListener('scroll',cabecalhoPag)
+sobre.addEventListener('scroll',cabecaSobre)
+inscreva.addEventListener('click',irLogin)
+redirec.addEventListener('click',irLogin)
+// proximo.addEventListener('click',passarProx)
+// anterior.addEventListener('click', voltarSlide)
+troca_icon.addEventListener('click', trocarTema)
+
+// funções 
+
+// função de redirecionamento para a pagina de login
+function irLogin(){
+    window.location.href = "login.html"
+}
+// função para trocar o tema e o icon
+function trocarTema(){
+    troca_icon.classList.toggle('fa-sun')
+    troca_icon.classList.toggle('fa-moon')
+    button_theme.toggleAttribute('checked')
+     
+}
+// função do header ao voltar a primeira parte
+function cabecalhoPag(){
+    cabeca.style.display = "flex"
+    cabeca.style.position = "relative"
+}
+// função do header ao rolar
+function cabecaSobre(){
+    cabeca.style.display = "flex"
+    cabeca.style.position = "fixed"
+}
+
+// função da barra de navegar responsiva
 
 $(document).ready(function () {
     $('#menu-icon').click(function () {
@@ -7,40 +65,17 @@ $(document).ready(function () {
     })
 })
 
-//  let men2 = document.getElementById("part2")
-let parallax1 = document.getElementById("part1")
-let cabecalho = document.getElementById("header")
-//  men2.addEventListener('wheel', () => {
-//      bar.style.display = "flex"
-//      bar.style.position = "fixed"
-//  })
-parallax1.addEventListener('wheel', () => {
-    cabecalho.style.display = "flex"
-    cabecalho.style.position = "relative"
-})
 
-let theme = document.getElementById("btn-switch")
-let icon_theme = document.getElementById("theme")
-let corpo = document.querySelector("header")
+// intervalo de tempo e passagem
+document.getElementById("slide1").checked = true;
+ setInterval(function(){
+    nextImagem()
+ },8000)
 
-theme.addEventListener('click', TemaEscuro)
-function TemaEscuro() {
-    icon_theme.classList.toggle('fa-sun')
-    icon_theme.classList.toggle('fa-moon')
-    corpo.classList.toggle('active')
-}
-
-//passador automatico parallax slide
-let number = 1
-let slider = document.get 
-
-let contador = 1;
-
-setInterval(function () {
-  let slider =  document.getElementById('slider' + contador).checked = true;
-    contador++;
-
-    if (counter > 5) {
-        contador = 1;
+ function nextImagem(){
+    count++;
+    if(count>5){
+        count=1
     }
-}, 3000);
+    document.getElementById("slide"+count).checked = true;
+ }

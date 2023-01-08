@@ -42,7 +42,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    background: rgba(0, 0, 0, .65);
+    background: rgba(164,226, 249, .40);
     box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3);
     width: 100%;
     text-transform: capitalize;
@@ -53,7 +53,7 @@ header {
 /*estilizando o texto dentro do header*/
 header>.text-logo {
     font-size: 2rem;
-    color: #666;
+    color: #000;
     padding: 0.5rem;
     text-align: center;
 }
@@ -64,7 +64,7 @@ header>#menu-icon {
     /* border-top:1px solid #666; */
     font-size: 2rem;
     margin: 1rem;
-    color: #666;
+    color: #000;
     display: none;
 }
 
@@ -76,7 +76,7 @@ header>.nav-barra>ul {
     align-items: center;
     justify-content: center;
     list-style: none;
-    background: rgba(0, 0, 0, .25);
+    background: rgba(164,226, 249, .20);
     padding: 1rem;
 
 }
@@ -88,7 +88,7 @@ header>.nav-barra>ul>li {
 
 header>.nav-barra>ul>li>a {
     font-size: 1.3rem;
-    color: gray;
+    color: #000;
 }
 
 header>.nav-barra>ul>li>a:hover {
@@ -134,7 +134,8 @@ input[type="checkbox"] {
     align-self: center;
     box-sizing: border-box;
     position: absolute;
-    color: gray;
+    color: #000;
+    cursor: pointer;
 }
 
 input:checked[type="checkbox"] {
@@ -178,7 +179,7 @@ input[type="checkbox"]:before {
     background-size: cover;
     /* border-radius: 20px; */
     overflow: hidden;
-    position: ab;
+    position: relative;
     /* top: 50%;
     left: 50%; */
     /* box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
@@ -242,16 +243,66 @@ input[type="checkbox"]:before {
 
 .slider_text>p,
 .slider_text>h3,
-.slider_text>a {
+.slider_text>p>a {
     color: #ffff;
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+    font-size: 12px;
 }
 
-#slide1:checked~.s1 {
-    margin-right: -100%;
+.slider_text {
+    margin-left: 10%;
 }
+
+.slider_text>h2 {
+    font-size: 35px;
+    color: #ffff;
+}
+
+#btn-inscreva, .btn-redirec {
+    background: rgba(79, 142, 181, 0.50);
+    color: #ffff;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 300px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#btn-inscreva:hover, .btn-redirec:hover {
+    background: rgba(79, 142, 181, 2);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 7);
+}
+
+/* #next {
+    position: absolute;
+    font-size: 35px;
+    top: 45%;
+    left: 10px;
+    cursor: pointer;
+}
+
+#next>i {
+    color: #fff;
+}
+
+#prev {
+    position: absolute;
+    cursor: pointer;
+    font-size: 35px;
+    top: 45%;
+    /* left: 97%; 
+    right: 10px;
+}
+
+#prev>i {
+    color: #fff;
+} */
+
+/* #slide1:checked~.s1 {
+    margin-right: -100%;
+} */
 
 #slide2:checked~.s1 {
     margin-left: -20%;
@@ -300,7 +351,7 @@ input[type="checkbox"]:before {
     background-repeat: no-repeat;
 }
 
-#slides-slide {
+#slides_slide {
     height: 100vh;
     width: 100%;
     background: linear-gradient(darkslategray, darkgray, gray);
@@ -309,7 +360,7 @@ input[type="checkbox"]:before {
 
 /* texto e conteudoo slides da landing page */
 
-#parallax-sobre{
+#parallax-sobre {
     box-sizing: border-box;
     height: 100vh;
     width: 100%;
@@ -326,7 +377,7 @@ input[type="checkbox"]:before {
 }
 
 .sobre section:nth-child(2) {
-   
+
     display: flex;
     grid-column: 4/4;
     display: flex;
@@ -339,10 +390,20 @@ input[type="checkbox"]:before {
 
 }
 
-#parallax-sobretxt{
+#parallax-sobretxt {
     text-align: justify;
-   grid-column: 1/3;
+    grid-column: 1/3;
 }
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:799px) {
 

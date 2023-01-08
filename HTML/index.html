@@ -31,7 +31,7 @@
                 <li><a href="/HTML/support.html">Suporte</a></li>
                 <li><a href="/HTML/chat.html">Conversas</a></li>
                 <li class="li-tema">
-                    <input type="checkbox" id="btn-switch"><i id="theme" class="fa-solid fa-sun"></i>
+                    <input type="checkbox" id="btn-switch" ><i id="theme" class="fa-solid fa-sun"></i>
                 </li>
             </ul>
 
@@ -41,10 +41,16 @@
     </header>
     <main>
         <!-- inicio corpo slide apresentação -->
-        <section class="module parallax-parallax-2" id="slides-slide">
+        <section class="module parallax-parallax-2" id="slides_slide">
             <section class="carousel-content">
-                <section class="carousel-slides">
-
+                <!-- <section id="next" class="btn">
+                 <i class="fa-solid fa-circle-chevron-left"></i>
+                </section>
+                <section id="prev" class="btn">
+                    <i  class="fa-solid fa-circle-chevron-right"></i>
+                </section> --> 
+                <section class="carousel-slides" id="wrapper">
+                  
                     <input class="input" type="radio" name="slide" id="slide1" checked>
                     <input class="input" type="radio" name="slide" id="slide2">
                     <input class="input" type="radio" name="slide" id="slide3">
@@ -52,69 +58,77 @@
                     <input class="input" type="radio" name="slide" id="slide5">
                     <!-- slide 1 -->
                     <section class="slider s1 slider_1">
-                       <section class="slider_text">
-                        <h1>BookStars!</h1>
-                        <p>Bem vindos!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam omnis ex at molestias eaque eius odit expedita nostrum magnam nobis optio voluptatem sed ut fugit, quasi magni quae ipsum a. <a href="">Saiba mais...</a>
-                        </p>
-                        <button id="btn-inscreva">Leia Agora!</button>
-                       </section>
+                        <section class="slider_text">
+                            <h2>BookStars!</h2>
+                            <p>Bem vindos!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam omnis ex at molestias
+                                eaque eius odit expedita nostrum magnam nobis optio voluptatem sed ut fugit, quasi magni
+                                quae ipsum a. <a href="">Saiba mais...</a>
+                            </p>
+                            <button id="btn-inscreva">Leia Agora!</button>
+                        </section>
                     </section>
                     <!-- slide2 -->
                     <section class="slider slider_2">
                         <section class="slider_text">
                             <h3>Nossa Comunidade</h3>
-                           
+
                             <a href="">Saiba Mais</a>
-                           </section>
+                        </section>
                     </section>
                     <!-- slide3 -->
                     <section class="slider slider_3">
                         <section class="slider_text">
                             <h3>Lorem</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sed placeat atque deleniti
-                                eligendi est? Rem, delectus. Soluta accusantium, consequatur impedit optio quae, totam aut
+                                eligendi est? Rem, delectus. Soluta accusantium, consequatur impedit optio quae, totam
+                                aut
                                 eius, inventore rem consectetur quibusdam.</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam laudantium odit neque
-                                officiis corporis alias? Voluptatem eveniet molestiae velit tempore impedit quas obcaecati
+                                officiis corporis alias? Voluptatem eveniet molestiae velit tempore impedit quas
+                                obcaecati
                                 iusto quaerat suscipit, atque, odio corrupti cumque.</p>
                             <a href="">Saiba Mais</a>
-                           </section>
+                        </section>
                     </section>
 
-                   
+
                     <!-- slide4 -->
                     <section class="slider slider_4">
                         <section class="slider_text">
                             <h3>Lorem</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sed placeat atque deleniti
-                                eligendi est? Rem, delectus. Soluta accusantium, consequatur impedit optio quae, totam aut
+                                eligendi est? Rem, delectus. Soluta accusantium, consequatur impedit optio quae, totam
+                                aut
                                 eius, inventore rem consectetur quibusdam.</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam laudantium odit neque
-                                officiis corporis alias? Voluptatem eveniet molestiae velit tempore impedit quas obcaecati
+                                officiis corporis alias? Voluptatem eveniet molestiae velit tempore impedit quas
+                                obcaecati
                                 iusto quaerat suscipit, atque, odio corrupti cumque.</p>
                             <a href="">Saiba Mais</a>
-                           </section>
+                        </section>
                     </section>
                     <!-- slide5 -->
                     <section class="slider slider_5">
                         <section class="slider_text">
                             <h3>Lorem</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sed placeat atque deleniti
-                                eligendi est? Rem, delectus. Soluta accusantium, consequatur impedit optio quae, totam aut
+                                eligendi est? Rem, delectus. Soluta accusantium, consequatur impedit optio quae, totam
+                                aut
                                 eius, inventore rem consectetur quibusdam.</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam laudantium odit neque
-                                officiis corporis alias? Voluptatem eveniet molestiae velit tempore impedit quas obcaecati
+                                officiis corporis alias? Voluptatem eveniet molestiae velit tempore impedit quas
+                                obcaecati
                                 iusto quaerat suscipit, atque, odio corrupti cumque.</p>
                             <a href="">Saiba Mais</a>
-                           </section>
+                        </section>
                     </section>
 
 
                 </section>
 
             </section>
-            <section id="nav-navigation">
+            <section id="nav-navigation"  class="bar-slide">
 
                 <label class="bar" for="slide1"></label>
                 <label class="bar" for="slide2"></label>
@@ -122,24 +136,30 @@
                 <label class="bar" for="slide4"></label>
                 <label class="bar" for="slide5"></label>
 
+            </section>
+            
+        </section>
 
+        <!-- fim slide apresnetação -->
+
+        <!-- slide de "Sobre nós" -->
+        <section class="sobre" id="parallax-sobre">
+            <section id="parallax-sobretxt">
+                <h2>
+                    Lorem
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, molestias temporibus
+                    repellendus modi facilis aperiam dolore debitis minima facere tempore nemo dicta enim sed
+                    recusandae reiciendis exercitationem ratione. Quidem, natus?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, provident rerum, dolorem pariatur quidem, quia vero fuga iure obcaecati ut ex sequi nemo veniam tenetur enim nostrum mollitia quam nobis.</p>
+                    <button class="btn-redirec">Leia Agora!</button>
+            </section>
+            <section id="parallax-sobreimg">
+                <img src="/IMG/amico.png" width="" alt="Bookshop -  imagem de autoria Freepik e Storyset">
             </section>
 
         </section>
-<!-- fim slide apresnetação -->
-<!-- slide de "Sobre nós" -->
-<section  class="sobre" id="parallax-sobre">
-    <section id="parallax-sobretxt">
-        <h2>
-            Lorem 
-        </h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, molestias temporibus repellendus modi facilis aperiam dolore debitis minima facere tempore nemo dicta enim sed recusandae reiciendis exercitationem ratione. Quidem, natus?</p>
-    </section>
-    <section id="parallax-sobreimg">
-        <img src="/IMG/amico.png" width="">
-    </section>
-</section>
-     
+
 
     </main>
 
