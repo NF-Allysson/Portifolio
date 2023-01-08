@@ -18,13 +18,28 @@
 /*seletor do mouse*/
 *::selection {
     background: darkslategray;
-    color: #fff;
+    color: white;
 
 }
+::-webkit-scrollbar{
+    width: 5px;
+    background: #333;
+   
+}
+::-webkit-scrollbar-thumb{
+    background: #666;
+    border-radius: 10px;
+    padding: 2.5px;
+    height: 2.5px;
+}
+::-webkit-scrollbar:hover{
+    width: 12.5px;
+    
+}
 
-*::placeholder {
+/* *::placeholder {
     color: #ffab41;
-}
+} */
 
 /*iniciando o html*/
 
@@ -42,7 +57,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    background: rgba(164,226, 249, .40);
+    background: rgba(164, 226, 249, .40);
     box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3);
     width: 100%;
     text-transform: capitalize;
@@ -76,7 +91,7 @@ header>.nav-barra>ul {
     align-items: center;
     justify-content: center;
     list-style: none;
-    background: rgba(164,226, 249, .20);
+    background: rgba(164, 226, 249, .20);
     padding: 1rem;
 
 }
@@ -86,17 +101,34 @@ header>.nav-barra>ul>li {
 
 }
 
-header>.nav-barra>ul>li>a {
-    font-size: 1.3rem;
-    color: #000;
+header>.nav-barra>ul>li button:hover {
+    text-decoration: underline;
 }
 
-header>.nav-barra>ul>li>a:hover {
+header>.nav-barra>ul>li>button {
+    font-size: 1.3rem;
+    color: #000;
+    background: none;
+}
+
+header>.nav-barra>ul>li>button:hover {
     color: #666;
 }
 
 /*termiando nav*/
 
+/* barra de progresso */
+
+#progress {
+    background-color: #02E4E7;
+    height: 10px;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
 
 /*Main/Parallax*/
 
@@ -108,10 +140,7 @@ header>.nav-barra>ul>li>a:hover {
 
 /*parallax*/
 
-
 /* button switch 2 */
-
-
 
 /* input[ colocar um atributo aqui dentro permite selecionar apenas os checkbox] */
 input[type="checkbox"] {
@@ -161,7 +190,6 @@ input[type="checkbox"]:before {
     box-shadow: 0px 4px 8px 1px, rgba(0, 0, 0, .25);
     transform: scale(1.1);
 }
-
 
 
 /* chamar no css apos adicionar no
@@ -260,7 +288,8 @@ input[type="checkbox"]:before {
     color: #ffff;
 }
 
-#btn-inscreva, .btn-redirec {
+#btn-inscreva,
+.btn-redirec {
     background: rgba(79, 142, 181, 0.50);
     color: #ffff;
     margin-top: 10px;
@@ -270,39 +299,13 @@ input[type="checkbox"]:before {
     cursor: pointer;
 }
 
-#btn-inscreva:hover, .btn-redirec:hover {
+#btn-inscreva:hover,
+.btn-redirec:hover {
     background: rgba(79, 142, 181, 2);
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 7);
 }
 
-/* #next {
-    position: absolute;
-    font-size: 35px;
-    top: 45%;
-    left: 10px;
-    cursor: pointer;
-}
 
-#next>i {
-    color: #fff;
-}
-
-#prev {
-    position: absolute;
-    cursor: pointer;
-    font-size: 35px;
-    top: 45%;
-    /* left: 97%; 
-    right: 10px;
-}
-
-#prev>i {
-    color: #fff;
-} */
-
-/* #slide1:checked~.s1 {
-    margin-right: -100%;
-} */
 
 #slide2:checked~.s1 {
     margin-left: -20%;
@@ -358,6 +361,16 @@ input[type="checkbox"]:before {
     position: relative;
 }
 
+.slider_1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.slider_2 {
+    display: flex;
+    justify-content: space-around;
+}
+
 /* texto e conteudoo slides da landing page */
 
 #parallax-sobre {
@@ -374,6 +387,7 @@ input[type="checkbox"]:before {
     padding: 10px;
     background: url(/IMG/Animated\ Shape.svg) no-repeat;
     background-size: cover;
+    padding: 50px;
 }
 
 .sobre section:nth-child(2) {
@@ -396,14 +410,100 @@ input[type="checkbox"]:before {
 }
 
 
+/* parallax pesquisa  */
 
+form {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+    box-shadow: 0px 0px 15px #AE4B4B;
 
+}
 
+form>input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+    color: #AE4B4B;
+    text-transform:capitalize;
+}
 
+form>input::placeholder {
+    color: #AE4B4B;
+}
 
+form>.fa {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #B92C2C;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
 
+form:hover {
+    width: 600px;
+    cursor: pointer;
+}
 
+form:hover>input {
+    display: block;
+}
 
+form:hover>.fa {
+    background: #B92C2C;
+    color: white;
+}
+
+/* parallax pesquisa */
+
+.pesquisa {
+    width: 100%;
+    height: 100vh;
+    background: url('https://c.pxhere.com/photos/4b/ca/fantasy_mac_irxsiempre-741629.jpg!d') no-repeat;
+    background-size: cover;
+    text-align: center;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#parallax-pesquisatxt{
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+/* parallax cards */
+
+#parallax-cards{
+    width: 100%;
+    height: 100vh;
+}
 
 @media (max-width:799px) {
 

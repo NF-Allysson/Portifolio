@@ -338,3 +338,32 @@ imagem img{
     height: 100vh;
 
 }
+
+/* #next {
+    position: absolute;
+    font-size: 35px;
+    top: 45%;
+    left: 10px;
+    cursor: pointer;
+}
+
+#next>i {
+    color: #fff;
+}
+
+#prev {
+    position: absolute;
+    cursor: pointer;
+    font-size: 35px;
+    top: 45%;
+    /* left: 97%; 
+    right: 10px;
+}
+
+#prev>i {
+    color: #fff;
+} */
+
+/* #slide1:checked~.s1 {
+    margin-right: -100%;
+} */

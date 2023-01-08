@@ -26,12 +26,12 @@
         <nav class="nav-barra">
 
             <ul>
-                <li><a href="/HTML/form.html">Pagina Inicial</a></li>
-                <li><a href="/HTML/login.html">Login</a></li>
-                <li><a href="/HTML/support.html">Suporte</a></li>
-                <li><a href="/HTML/chat.html">Conversas</a></li>
+                <li id="home"><button disabled="disabled">Página Inicial</button></li>
+                <li id="logon"><button>Login</button></li>
+                <li id="suporte"><button>Suporte</button></li>
+                <li id="conversa"><button disabled="disabled">Chat</button></li>
                 <li class="li-tema">
-                    <input type="checkbox" id="btn-switch" ><i id="theme" class="fa-solid fa-sun"></i>
+                    <input type="checkbox" id="btn-switch"><i id="theme" class="fa-solid fa-sun"></i>
                 </li>
             </ul>
 
@@ -40,6 +40,7 @@
 
     </header>
     <main>
+        <div id="progress"></div>
         <!-- inicio corpo slide apresentação -->
         <section class="module parallax-parallax-2" id="slides_slide">
             <section class="carousel-content">
@@ -48,9 +49,9 @@
                 </section>
                 <section id="prev" class="btn">
                     <i  class="fa-solid fa-circle-chevron-right"></i>
-                </section> --> 
+                </section> -->
                 <section class="carousel-slides" id="wrapper">
-                  
+
                     <input class="input" type="radio" name="slide" id="slide1" checked>
                     <input class="input" type="radio" name="slide" id="slide2">
                     <input class="input" type="radio" name="slide" id="slide3">
@@ -67,13 +68,21 @@
                             </p>
                             <button id="btn-inscreva">Leia Agora!</button>
                         </section>
+                        <section>
+                            <img src="/IMG/rafiki.png" alt="">
+                        </section>
                     </section>
                     <!-- slide2 -->
                     <section class="slider slider_2">
                         <section class="slider_text">
-                            <h3>Nossa Comunidade</h3>
-
-                            <a href="">Saiba Mais</a>
+                            <h2>Encontre sua cumunidade</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laboriosam reiciendis
+                                doloremque nobis a corporis qui commodi aliquam iure eos accusantium, cupiditate
+                                eligendi sed perspiciatis quidem temporibus saepe rem totam.</p>
+                            <button class="btn-redirec">Conheça nossas comunidades</button>
+                        </section>
+                        <section>
+                            <img src="/IMG/Community.png" alt="">
                         </section>
                     </section>
                     <!-- slide3 -->
@@ -128,7 +137,7 @@
                 </section>
 
             </section>
-            <section id="nav-navigation"  class="bar-slide">
+            <section id="nav-navigation" class="bar-slide">
 
                 <label class="bar" for="slide1"></label>
                 <label class="bar" for="slide2"></label>
@@ -137,7 +146,7 @@
                 <label class="bar" for="slide5"></label>
 
             </section>
-            
+
         </section>
 
         <!-- fim slide apresnetação -->
@@ -151,12 +160,37 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, molestias temporibus
                     repellendus modi facilis aperiam dolore debitis minima facere tempore nemo dicta enim sed
                     recusandae reiciendis exercitationem ratione. Quidem, natus?</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, provident rerum, dolorem pariatur quidem, quia vero fuga iure obcaecati ut ex sequi nemo veniam tenetur enim nostrum mollitia quam nobis.</p>
-                    <button class="btn-redirec">Leia Agora!</button>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, provident rerum, dolorem
+                    pariatur quidem, quia vero fuga iure obcaecati ut ex sequi nemo veniam tenetur enim nostrum mollitia
+                    quam nobis.</p>
+                <button class="btn-redirec">Leia Agora!</button>
             </section>
             <section id="parallax-sobreimg">
                 <img src="/IMG/amico.png" width="" alt="Bookshop -  imagem de autoria Freepik e Storyset">
             </section>
+
+
+            <!-- pesquisa -->
+        </section>
+        <section class="pesquisa" id="parallax-pesquisa">
+            <section id="parallax-pesquisatxt">
+                <h2>Encontre um livro</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, sed. Officiis quibusdam, rem
+                    veritatis, similique illum expedita recusandae eveniet quae cumque dolorum dignissimos blanditiis
+                    odit repellat possimus voluptatem natus soluta!
+                </p>
+
+            </section>
+            <section>
+                <form action="">
+                    <input type="search" placeholder="Pesquise o Livro" id="" required>
+                    <i class="fa fa-search"></i>
+                </form>
+            </section>
+
+        </section>
+        <section id="parallax-cards">
+
 
         </section>
 
